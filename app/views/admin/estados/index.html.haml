@@ -1,0 +1,12 @@
+.row
+  .col-md-6
+    %h2 Estados
+  .pull-right
+    = link_to new_admin_estado_path, remote: true, class: 'btn btn-red' do
+      %i.glyphicon.glyphicon-plus-sign
+      Agregar Estado
+
+.row
+  %section.section
+    %ul.list-unstyled#estados_list
+      = render 'estados', estados: @estados

@@ -1,0 +1,37 @@
+= form_for [:admin, @estado], html: { :multipart => true } do |f|
+  = hidden_field_tag :authenticity_token, form_authenticity_token
+  = f.hidden_field :vehiculo_id, value: @vehiculo.id
+  = f.hidden_field :estado_id, value: @status.id
+  .modal-body
+    .alert.alert-block.alert-danger.alert-dismissable.error_box{style: "display:none;"}
+      %a.close{data: {'dismiss': 'alert'}} &times;
+      %ul.list-unstyled.errors
+    .row
+      .col-md-12
+        .form-group
+          = f.label :fecha_y_hora, class: 'control-label'
+          .input-group.date#datetimepicker1
+            = f.text_field :fecha_y_hora, class: 'form-control'
+            %span.input-group-addon
+              %i.glyphicon.glyphicon-calendar
+    .row
+      .col-md-12
+        .form-group
+          = f.label :notas, class: 'control-label'
+          = f.text_area :notas, class: 'form-control'
+    .row
+      .col-md-12
+        .form-group
+          = f.label :adjuntos, class: 'control-label'
+          = file_field_tag "adjuntos[]", type: :file, multiple: true, class: 'form-control'
+  .modal-footer
+    = link_to "Cancelar", '#', class: 'btn', data: {dismiss: 'modal'}
+    = button_tag class: 'btn btn-red' do
+      %i.glyphicon.glyphicon.glyphicon-floppy-disk
+      Actualizar Estado
+
+:javascript
+  $("#datetimepicker1").datetimepicker({
+    format: "DD/MM/YYYY HH:mm",
+    locale: "es",
+  });

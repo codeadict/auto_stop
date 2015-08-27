@@ -1,0 +1,27 @@
+.modal-dialog.modal-lg
+  .modal-content
+    .modal-header
+      %button.close{type:"button", data:{dismiss:"modal"}, aria:{label:"Close"}}
+        %span{aria:{hidden:"true"}} &times;
+      %h3
+        Historial del vehículo:
+        #{@vehiculo.placa}
+    .modal-body{id: "historial_id_#{@vehiculo.id}"}
+      %table
+        %thead
+          %tr
+            %th.col-md-7
+              Given Error
+            %th.col-md-2
+              Row
+            %th.col-md-3
+              Time
+        %tbody
+          - @upload.import_errors.reorder('created_at desc').each do |error|
+            %tr
+              %td.col-md-7
+                #{error.error_description}
+              %td.col-md-2
+                #{error.row}
+              %td.col-md-3
+                #{error.created_at.strftime('%I:%M:%S %p')}

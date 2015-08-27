@@ -1,0 +1,1 @@
+$("#vehicles_content").html "<%= j(render 'list') %>"

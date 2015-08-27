@@ -1,0 +1,1 @@
+$("#status_content").html "<%= j(render 'vehicle_status') %>"

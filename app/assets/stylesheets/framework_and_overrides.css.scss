@@ -1,16 +1,335 @@
 // import the CSS framework
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+
+body {
+  font-family: 'Yanone Kaffeesatz', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  background: #f7f7f7 image_url('bg_texture.jpg') repeat scroll 0 0;
+  box-shadow: rgba(0, 0, 0, .1) 0 5px 5px;
+  -moz-box-shadow: rgba(0,0,0,.1) -5px 5px 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, .1) 0 5px 5px;
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nomargin{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: 'Yanone Kaffeesatz', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 41px;
+  margin: 0 0 30px;
+}
+
+a, a:hover, a:focus, a:active, a.active {
+  color: #FD292B;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+footer {;
+  text-align: center;
+}
+
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+  background-color: #FD292B;
+}
+
+ul.social-buttons li a {
+  display: block;
+  background-color: #222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+}
 
 // make all images responsive by default
 img {
   @extend .img-responsive;
   margin: 0 auto;
-  }
+}
+
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  }
+  padding: 0px;
+}
+
+.text {
+  font-size: 38px;
+  line-height: 40px;
+}
+
+p{
+  line-height: 1;
+  font: 20px 'Yanone Kaffeesatz', 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  color: #333;
+  font-weight: 400;
+}
+
+#map {
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: 0 1px 0 #fff;
+  -moz-box-shadow: 0 1px 0 #fff;
+  -webkit-box-shadow: 0 1px 0 #fff;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 350px;
+}
+
+.btn-red {
+  background-color: hsl(360, 100%, 82%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef0000", endColorstr="#d10000");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ef0000), to(#d10000));
+  background-image: -moz-linear-gradient(top, #ef0000, #d10000);
+  background-image: -ms-linear-gradient(top, #ef0000, #d10000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ef0000), color-stop(100%, #d10000));
+  background-image: -webkit-linear-gradient(top, #ef0000, #d10000);
+  background-image: -o-linear-gradient(top, #ef0000, #d10000);
+  background-image: linear-gradient(#ef0000, #d10000);
+  border-color: #d10000 #d10000 hsl(360, 100%, 39%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.09);
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-default {
+  background-color: #FD292B;
+  border-color: #A5342B;
+}
+
+#corporate-main-nav.scrolled {
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+#corporate-main-nav.scrolled {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+#corporate-main-nav.scrolled {
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+#corporate-main-nav {
+  -webkit-transition: all 125ms ease-in-out;
+  -moz-transition: all 125ms ease-in-out;
+  -ms-transition: all 125ms ease-in-out;
+  transition: all 125ms ease-in-out;
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  z-index: 800;
+}
+
+#corporate-main-nav #corporate-nav-bar ul.navbar-nav a {
+  font-size: 26px;
+  font-weight: 700;
+  background: transparent;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color 125ms ease-in-out;
+  -moz-transition: color 125ms ease-in-out;
+  -ms-transition: color 125ms ease-in-out;
+  -o-transition: color 125ms ease-in-out;
+  transition: color 125ms ease-in-out;
+}
+
+#corporate-nav-bar ul.navbar-nav {
+  margin-right: 35px;
+}
+
+#corporate-nav-bar ul.navbar-nav a {
+  font-size: 26px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: transparent;
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 39px;
+  padding: 15px 10px;
+  -webkit-transition: color 125ms ease-in-out;
+  -moz-transition: color 125ms ease-in-out;
+  -ms-transition: color 125ms ease-in-out;
+  -o-transition: color 125ms ease-in-out;
+  transition: color 125ms ease-in-out;
+}
+
+main {
+  background: #ffffff;
+}
+
+.sidenote img {
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+.btn-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto;
+}
+
+.bootstrap-datetimepicker-widget {
+  z-index:99999 !important;
+}
+
+.btn-siteland {
+  font-size: 1.2em;
+  background-color: hsl(360, 100%, 82%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ef0000", endColorstr="#d10000");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ef0000), to(#d10000));
+  background-image: -moz-linear-gradient(top, #ef0000, #d10000);
+  background-image: -ms-linear-gradient(top, #ef0000, #d10000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ef0000), color-stop(100%, #d10000));
+  background-image: -webkit-linear-gradient(top, #ef0000, #d10000);
+  background-image: -o-linear-gradient(top, #ef0000, #d10000);
+  background-image: linear-gradient(#ef0000, #d10000);
+  border-color: #d10000 #d10000 hsl(360, 100%, 39%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.09);
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.marginbottom20 {
+  margin-bottom: 20px;
+}
+
+.margintop20 {
+  margin-top: 20px;
+}
+
+.bucket {
+  padding: 0 10px;
+}
+
+.bucket img {
+  width: 100%;
+  height: 139px;
+}
+
+.bucket a {
+  color: #fff;
+  display: block;
+  background: #FD5E62;
+  border-top: solid 5px #AEB5AD;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 40px;
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
@@ -18,32 +337,40 @@ img {
 .column {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
+
 .form {
   @extend .col-md-6;
-  }
+}
+
 .form-centered {
   @extend .col-md-6;
   @extend .text-center;
-  }
+}
+
 .submit {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-lg;
-  }
+}
+
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
-  @extend .container;
-  background-color: #eee;
+  padding-top: 101px;
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  }
+  min-height: 500px;
+}
+
+.home-page *[role="main"] {
+  margin-top: 0;
+}
+
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}
 
 // Styles for form views
 // using Bootstrap
@@ -53,28 +380,35 @@ section {
   max-width: 320px;
   margin: 0 auto;
 }
+
 .authform form {
   @extend .well;
   @extend .well-lg;
   padding-bottom: 40px;
 }
+
 .authform .right {
   float: right !important;
 }
+
 .authform .button {
   @extend .btn;
   @extend .btn-primary;
 }
+
 .authform fieldset {
   @extend .well;
 }
+
 #error_explanation:not(:empty) {
   @extend .alert;
   @extend .alert-danger;
 }
+
 #error_explanation h2 {
   font-size: 16px;
 }
+
 .button-xs {
   @extend .btn;
   @extend .btn-primary;

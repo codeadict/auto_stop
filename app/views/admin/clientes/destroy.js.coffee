@@ -1,0 +1,1 @@
+$("#entity_<%= @entity.id %>").fadeOut('fast').remove()

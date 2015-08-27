@@ -3,14 +3,40 @@ html
   head
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     title
-      = content_for?(:title) ? yield(:title) : 'Auto Stop'
+      = content_for?(:title) ? yield(:title) : 'Auto Stop LC'
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Auto Stop'}"
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => true
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
+    == javascript_include_tag '//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry', 'data-turbolinks-track' => false
     == csrf_meta_tags
   body
-    header
+    header#corporate-main-nav
       == render 'layouts/navigation'
-    main[role="main"]
+    main.container[role="main"]
       == render 'layouts/messages'
       == yield
+    footer.marginbottom20
+      .container
+        hr
+        .row
+          .col-md-4
+            span.copyright Copyright &copy; Auto Stop LC 2015
+          .col-md-4
+            ul.list-inline.social-buttons
+              li
+                a href="https://twitter.com/AutoStopLC"
+                  i.fa.fa-twitter
+              li
+                a href="https://facebook.com/autostoplc"
+                  i.fa.fa-facebook
+              li
+                a href="https://plus.google.com/+autostoplc"
+                  i.fa.fa-google-plus
+          .col-md-4
+            ul.list-inline.quicklinks
+              li
+                p Teléfonos
+                a href="tel: 022432655"  243-2655
+                span &nbsp; - &nbsp;
+                a href="tel: 023340669"  604-0992
+==yield :js_footer

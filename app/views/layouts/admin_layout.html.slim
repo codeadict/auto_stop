@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    title
+      = content_for?(:title) ? yield(:title) : 'Administracion Auto Stop LC'
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Auto Stop'}"
+    == stylesheet_link_tag "admin", :media => 'all', 'data-turbolinks-track' => true
+    == javascript_include_tag 'application', 'data-turbolinks-track' => true
+    == csrf_meta_tags
+  body
+    header
+      == render 'layouts/navigation_admin'
+    .container
+      main[role="main"]
+        == render 'layouts/messages'
+        == yield
+    footer.marginbottom20
+      .container
+        hr
+        .row
+          .col-md-4
+            span.copyright &copy; Auto Stop LC 2015
+          .col-md-4
+
+    #crud_modal.modal.fade{data-keyboard="false" data-backdrop="static"}
+    == yield :extra_modal
+== yield :js_footer

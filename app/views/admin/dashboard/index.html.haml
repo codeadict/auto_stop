@@ -1,0 +1,69 @@
+.row
+  .col-md-6
+    %h3 Vehículos esta semana
+    .chart#chart_semana
+      %svg{style: "height: 200px;"}
+  .col-md-6
+    %h3 Vehículos por meses
+    .chart#chart_meses
+      %svg{style: "height: 200px;"}
+-#.row
+-#  .col-md-12
+-#    #statuses-chart
+
+= content_for :js_footer do
+  :javascript
+    $(function() {
+      create_bar_chart(#{@chart_semanal.to_json}, '#chart_semana', xlabel='Día');
+      create_bar_chart(#{@chart_mensual.to_json}, '#chart_meses', xlabel='Meses');
+
+      $('#statuses-chart').highcharts({
+        chart: {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: true,
+          spacing: [0, 0, 0, 0]
+        },
+        credits: {
+          enabled: false
+        },
+        title: {
+          text: 'Vehículos por Estados',
+          margin: 0
+        },
+        tooltip: {
+          pointFormat: '{point.y} {series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+          pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+              enabled: false,
+              format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+              style: {
+                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+              }
+            }
+          },
+        },
+        series: [{
+          type: 'pie',
+          name: 'Vehículos',
+          data: [
+            #{EstadoVehiculo.distinct('vehiculo_id').joins(:estado).select('estados.nombre AS name, COUNT(estado_vehiculos.vehiculo_id) AS amount').group('estados.nombre').collect{ |c| "{name: '#{c.name}', y: #{c.amount}}" }.join(',')}
+          ],
+          dataLabels: {
+            enabled: true,
+            align: 'left',
+            style: {
+                fontWeight: 'regular'
+            },
+            x: 3,
+            verticalAlign: 'middle',
+            overflow: true,
+            crop: false
+          }
+        }],
+      });
+    });

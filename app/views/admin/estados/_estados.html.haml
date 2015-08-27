@@ -1,0 +1,8 @@
+- estados.each do  |estado|
+  %li.object_list{id: "estado_#{estado.id}"}
+    .ellipsis_100{title: estado.nombre} #{estado.nombre}
+    .actions
+      = link_to  admin_estado_path(estado.id),  method: :delete, remote: true, class: 'delete', title: 'Eliminar', data: {toggle: 'tooltip', confirm: 'Seguro que desea eliminar este estado?'} do
+        %i.glyphicon.glyphicon-trash
+      = link_to edit_admin_estado_path(estado.id), class: 'edit', remote: true, id: "edit-#{estado.id}", title: 'Editar', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-pencil

@@ -1,0 +1,42 @@
+.row.nomargin
+  .col-sm-8
+    #home-slider.carousel.slide data-ride="carousel"
+      ol.carousel-indicators
+        li.active data-slide-to="0" data-target="#home-slider"
+        li data-slide-to="1" data-target="#home-slider"
+        li data-slide-to="2" data-target="#home-slider"
+      .carousel-inner role="listbox"
+        .item.active
+          == image_tag 'slide1.png'
+        .item
+          == image_tag 'slide2.png'
+        .item
+          == image_tag 'slide3.png'
+
+  .col-sm-4.text-center
+    br
+    .text
+      strong Tu vehículo
+    .text en manos de los
+    .text
+      strong Mejores
+    .text Profesionales
+    br
+    = link_to "Cotizar Ahora", contact_path, class: 'btn btn-siteland'
+.row.margintop20
+  .col-sm-3.bucket
+    == image_tag 'repair_services.jpg'
+    == link_to "Servicios", servicios_path
+  .col-sm-3.bucket
+    == image_tag 'happy_customer.jpg'
+    == link_to "Experiencia", nosotros_path
+  .col-sm-3.bucket
+    == image_tag 'location.jpg'
+    == link_to "Ubicación", contact_path
+  .col-sm-3.bucket
+    == image_tag 'contact_us.jpg'
+    == link_to "Contacto", contact_path
+.row.marginbottom20.margintop20.text-center
+  .col-sm-6.col-sm-offset-3
+    h3 Trabajamos con las principales aseguradoras del Ecuador
+    hr

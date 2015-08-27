@@ -7,6 +7,12 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem "font-awesome-rails"
+gem 'dropzonejs-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
+gem 'mail_form'
+gem 'simple_form'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -15,8 +21,11 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'devise_invitable'
+gem 'pg'
 gem 'mysql2'
 gem 'slim-rails'
+gem 'haml-rails'
+gem 'novus-nvd3-rails'
 group :development do
   gem 'better_errors'
   gem 'capistrano', '~> 3.0.1'
@@ -39,3 +48,8 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
 end
+gem 'id_ecuador'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+gem 'ckeditor'
+gem 'paperclip'

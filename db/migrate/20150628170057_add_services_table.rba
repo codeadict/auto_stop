@@ -1,0 +1,4 @@
+class AddServicesTable < ActiveRecord::Migration
+  def change
+  end
+end

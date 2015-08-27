@@ -1,0 +1,6 @@
+- pages.each do  |page|
+  %li.object_list{id: "page_#{page.id}"}
+    .ellipsis_100{title: page.title} #{page.title}
+    .float-right
+      = link_to pages_edit_path(page.id), class: 'edit', remote: true, id: "edit-#{page.id}", title: 'Editar', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-pencil

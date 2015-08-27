@@ -1,0 +1,15 @@
+= form_for [:admin, @estado], remote: true do |f|
+  .modal-body
+    .alert.alert-block.alert-danger.alert-dismissable.error_box{style: "display:none;"}
+      %a.close{data: {'dismiss': 'alert'}} &times;
+      %ul.list-unstyled.errors
+    .row
+      .col-md-12
+        .form-group
+          = f.label :nombre, class: 'control-label'
+          = f.text_field :nombre, class: 'form-control'
+  .modal-footer
+    = link_to "Cancelar", '#', class: 'btn', data: {dismiss: 'modal'}
+    = button_tag class: 'btn btn-red' do
+      %i.glyphicon.glyphicon.glyphicon-floppy-disk
+      Guardar

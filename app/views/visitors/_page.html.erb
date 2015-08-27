@@ -1,0 +1,12 @@
+<% if current_user.nil? %>
+    <%= raw @page.content %>
+<% else %>
+    <%= form_tag pages_update_path, remote: true do %>
+
+        <%= hidden_field_tag :id, @page.id %>
+        <%= cktext_area_tag "page[content]", @page.content, ckeditor: {toolbar: "mini"} %>
+
+        <%= submit_tag "Guardar Contenido", disable_with: "Guardando...", class: "btn" %>
+
+    <% end %>
+<% end %>

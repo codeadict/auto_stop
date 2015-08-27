@@ -1,0 +1,35 @@
+.row
+  .col-md-6
+    %span
+      = form_tag admin_vehiculos_path, remote: true, method: :get do
+        .form-group
+          %p
+            Puedes buscar: placa: ej. XBB2396, marca: ej. chevrolet
+          .input-group
+            = text_field_tag :search, '', placeholder: 'Buscar', class: 'form-control', aria:{describedby:"search_button"}
+            %span#search_button.input-group-addon{style: 'padding: 0 3px;'}
+              = button_tag class: 'btn btn-red', data: { disable_with: 'Buscando...'} do
+                %i.glyphicon.glyphicon-search.col-md-6
+  .pull-right
+    - unless Cliente.all.count.zero?
+      = link_to new_admin_vehiculo_path, remote: true, class: 'btn btn-red' do
+        %i.glyphicon.glyphicon-plus-sign
+        Ingresar Vehículo
+
+.row
+  .col-md-12
+    %table.table.table-condensed.table-striped.table-bordered.table-hover
+      %thead
+        %tr
+          %th Cliente(Persona y/o Empresa)
+          %th Placa
+          %th Marca
+          %th Modelo
+          %th Fecha Ingreso
+          %th Responsabilidad Civil
+          %th Aseguradora
+          %th Estado Actual
+          %th.text-center{style: 'width: 90px;'} Acciones
+          %th.text-center{style: 'width: 130px;'} Cambar Estado
+      %tbody#vehicles_content
+        = render 'list'

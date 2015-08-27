@@ -3,26 +3,26 @@
 en:
   devise:
     confirmations:
-      confirmed: "Your email address has been successfully confirmed."
+      confirmed: "Su correo ha sido confirmado  correctamente."
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
     failure:
       already_authenticated: "You are already signed in."
-      inactive: "Your account is not activated yet."
-      invalid: "Invalid %{authentication_keys} or password."
-      locked: "Your account is locked."
-      last_attempt: "You have one more attempt before your account is locked."
-      not_found_in_database: "Invalid %{authentication_keys} or password."
-      timeout: "Your session expired. Please sign in again to continue."
-      unauthenticated: "You need to sign in or sign up before continuing."
-      unconfirmed: "You have to confirm your email address before continuing."
+      inactive: "Su cuenta aun no ha sido activada."
+      invalid: "%{authentication_keys} o contraseña inválidos."
+      locked: "Su cuenta está bloqueada."
+      last_attempt: "Tiene una oportunidad más antes de que se bloquee su cuenta."
+      not_found_in_database: "%{authentication_keys} o contraseña inválidos."
+      timeout: "Su sesión se ha cerrado. Por favor entre de nuevo."
+      unauthenticated: "Debe estar logeado antes de continuar a esta sección."
+      unconfirmed: "Debe confirmar su correo antes de continuar."
     mailer:
       confirmation_instructions:
-        subject: "Confirmation instructions"
+        subject: "Instruciones de confirmación"
       reset_password_instructions:
-        subject: "Reset password instructions"
+        subject: "Instrucciones para cambio de contraseña"
       unlock_instructions:
-        subject: "Unlock instructions"
+        subject: "Instrucciones de desbloqueo"
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
@@ -41,9 +41,9 @@ en:
       update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
       updated: "Your account has been updated successfully."
     sessions:
-      signed_in: "Signed in successfully."
-      signed_out: "Signed out successfully."
-      already_signed_out: "Signed out successfully."
+      signed_in: "Logeado correctamente."
+      signed_out: "Ha salido de su cuenta de administración."
+      already_signed_out: "Ha salido de su cuenta de administración.."
     unlocks:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
@@ -53,7 +53,7 @@ en:
       already_confirmed: "was already confirmed, please try signing in"
       confirmation_period_expired: "needs to be confirmed within %{period}, please request a new one"
       expired: "has expired, please request a new one"
-      not_found: "not found"
+      not_found: "no encontrado"
       not_locked: "was not locked"
       not_saved:
         one: "1 error prohibited this %{resource} from being saved:"

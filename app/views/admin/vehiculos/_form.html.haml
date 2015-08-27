@@ -1,0 +1,91 @@
+= form_for [:admin, @vehiculo], remote: true do |f|
+  = hidden_field_tag :from_autocomplete, @from_autocomplete
+  = hidden_field_tag :autocomplete_id, @autocomplete_id
+  .modal-body
+    .alert.alert-block.alert-danger.alert-dismissable.error_box{style: "display:none;"}
+      %a.close{data: {'dismiss': 'alert'}} &times;
+      %ul.list-unstyled.errors
+    - if @cliente.nil?
+      .row
+        .col-md-12
+          .form-group
+            = f.label :cliente_id, class: 'control-label'
+            = f.select :cliente_id, Cliente.all.collect{ |g| [g.nombre_y_apellidos, g.id] }, { include_blank: true }, { class: 'form-control' }
+          %hr
+    - unless @cliente.nil?
+      = f.hidden_field :cliente_id, value: @cliente.id
+    .row
+      .col-md-6
+        %h4 Datos del Auto:
+        %hr
+        .row
+          .col-md-6
+            .form-group
+              = f.label :placa, class: 'control-label'
+              = f.text_field :placa, class: 'form-control'
+          .col-md-6
+            .form-group
+              = f.label :fecha_ingreso, class: 'control-label'
+              .input-group.date#datetimepicker1
+                = f.text_field :fecha_ingreso, class: 'form-control', data: {format: "dd/MM/yyyy" }
+                %span.input-group-addon
+                  %i.glyphicon.glyphicon-calendar
+        .row
+          .col-md-6
+            .form-group
+              = f.label :marca, class: 'control-label'
+              = f.text_field :marca, class: 'form-control'
+          .col-md-6
+            .form-group
+              = f.label :modelo, class: 'control-label'
+              = f.text_field :modelo, class: 'form-control'
+        .row
+          .col-md-6
+            .form-group
+              = f.label :anio, class: 'control-label'
+              = f.text_field :anio, class: 'form-control'
+          .col-md-6
+            .form-group
+              = f.label :color, class: 'control-label'
+              = f.text_field :color, class: 'form-control'
+      .col-md-6
+        .col-md-12
+          %h4 Datos para el Trabajo:
+          %hr
+          .form-group
+            = f.label :responsabilidad_civil, class: 'control-label'
+            = f.text_field :responsabilidad_civil, class: 'form-control'
+        .col-md-12
+          .form-group
+            = f.label :correo_ejecutivo, class: 'control-label'
+            = f.select :correo_ejecutivo, options_for_select(Vehiculo.mails, selected: ''),{}, {class: 'form-control'}
+        .col-md-12
+          .form-group
+            = f.label :aseguradora, class: 'control-label'
+            = f.text_field :aseguradora, class: 'form-control'
+        .col-md-6
+          .form-group
+            = f.label :poliza, class: 'control-label'
+            = f.text_field :poliza, class: 'form-control'
+        .col-md-6
+          .form-group
+            = f.label :kilometraje_actual, class: 'control-label'
+            = f.text_field :kilometraje_actual, class: 'form-control'
+    .row
+      .col-md-12
+        .row
+          .col-md-12
+            .form-group
+              = f.label :descripcion_del_trabajo, class: 'control-label'
+              = f.text_area :descripcion_del_trabajo, class: 'form-control'
+  .modal-footer
+    = link_to "Cancelar", '#', class: 'btn', data: {dismiss: 'modal'}
+    = button_tag class: 'btn btn-red' do
+      %i.glyphicon.glyphicon.glyphicon-floppy-disk
+      Guardar
+
+:javascript
+  $("#datetimepicker1").datetimepicker({
+    format: "DD/MM/YYYY",
+    locale: "es",
+  });

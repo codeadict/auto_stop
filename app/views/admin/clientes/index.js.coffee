@@ -1,0 +1,1 @@
+$("#entities_content").html "<%= j(render 'list') %>"

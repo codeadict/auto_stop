@@ -1,0 +1,29 @@
+/ navigation styled for Bootstrap 3.0
+%header#corporate-main-nav
+  %nav.navbar.navbar-default.navbar#corporate-nav-bar
+    .container
+      .navbar-header
+        %button.navbar-toggle{data: {target: ".navbar-collapse", toggle: "collapse"}, type: "button"}
+          %span.left Menu
+          .menu-icon
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+        %a#zp-nav-logo{href: "/"}
+          .navbar-brand{style: "display: block; opacity: 1;"}
+            %h2
+      .collapse.navbar-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            = link_to 'Dashboard', admin_root_path
+          %li
+            = link_to 'Clientes', admin_clientes_path
+          %li
+            = link_to 'Vehículos', admin_vehiculos_path
+          %li
+            = link_to 'Configurar Estados', admin_estados_path
+          - if user_signed_in?
+            %li
+              = link_to 'Salir', destroy_user_session_path, :method=>'delete'
+            %li
+              = link_to 'Volver al Sitio', root_path

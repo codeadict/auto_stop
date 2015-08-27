@@ -1,0 +1,53 @@
+- if @cliente && @cliente.count.zero?
+  .alert.alert-danger{role: 'alert'}
+    %span.glyphicon.glyphicon-exclamation-sign{aria: {hidden: "true"}}
+    %span.sr-only
+      Información:
+    Usted no tiene ningún vehículo en nuestro taller o ha introducido mal sus datos.
+    Por favor ingrese correctamente su identificación.
+- else
+  - if @vehiculos.count > 0
+    - @vehiculos.each do |v|
+      .panel-group#acordion
+        .panel.panel-default
+          .panel-heading
+            %h4.panel-title.row
+              %span.col-sm-4
+                #{v.marca} #{v.modelo}
+                %b.label.label-danger
+                  #{v.placa}
+              %span.col-sm-6
+                - if v.estado_vehiculos.count > 0
+                  %b
+                    Estado Actual:
+                  #{v.estado_vehiculos.all.last.estado.nombre or '-'}
+              %span.col-sm-2
+                %button.btn.btn-sm.btn-default{data: {toggle: 'collapse', target: "#vehiculo_#{v.id}"}}
+                  %span.glyphicon.glyphicon-collapse-down
+                  Ver Detalles
+          .panel-collapse.collapse{id: "vehiculo_#{v.id}"}
+            .panel-body
+              %b
+                Fecha Ingreso al Taller:
+              #{v.fecha_ingreso or '-'}
+              %br/
+              - if v.estado_vehiculos.count > 0
+                %b Estado de su Vehículo:
+                #{v.estado_vehiculos.all.last.estado.nombre or '-'}
+                %br/
+                %p
+                  %b
+                    Fecha de Actualización:
+                  #{v.estado_vehiculos.all.last.fecha_y_hora or '-'}
+                %p
+                  %b
+                    Detalles:
+                  #{v.estado_vehiculos.all.last.notas or '-'}
+                - if not v.estado_vehiculos.all.last.adjuntos.nil?
+                  %p
+                    %b
+                      Archivos Adjuntos:
+                      - v.estado_vehiculos.all.last.adjuntos.each do |f|
+                        = link_to f.archivo.url do
+                          .image{id: "photo-#{f.id}"}
+                            = image_tag f.archivo.url, class: 'img-thumbnail img-responsive img-rounded', alt: f.archivo_file_name, style: 'width: 200px;'

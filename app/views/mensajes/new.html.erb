@@ -1,0 +1,76 @@
+<div class="col-sm-12">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="page-hader">
+        <h1>Contacte con AutoStop LC</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="sidenote">
+        <%= image_tag 'office.png' %>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+
+      <h2>Ubicación</h2>
+      <br/>
+
+      <p>Estamos en la Avenida Rio Coca y Eloy Alfaro, frente a la parada de los buses a Tumbaco.</p>
+
+      <p>
+      <li>
+        <b>Teléfonos: </b> 02243-2655
+      </li>
+      <li>
+        <b>Celular: </b> 09 58871429
+        <br/>
+      </li>
+      </p>
+      <p>Atendemos de lunes a viernes de 8am a 6pm, <br/> Sábados de 8am a 2pm.</p>
+
+    </div>
+    <div class="col-sm-8 col-sm-offset-1">
+      <div class="row">
+        <p>Envíenos un correo en cualquier momento. Le responderemos dentro de un día hábil. Para alguna emergencia o
+          consulta también puede contactarnos a nuestros teléfono o visitar nuestras oficinas. Estaremos gustosos de
+          atenderle.</p>
+      </div>
+      <div class="row">
+        <%= form_for @message, url: contact_path do |message_form| %>
+            <fieldset>
+              <div class="form-group">
+                <%= message_form.text_field :nombre_y_apellidos, placeholder: "Nombres y Apellidos", class: "form-control" %>
+              </div>
+
+              <div class="form-group">
+                <%= message_form.email_field :correo, placeholder: "Correo", class: "form-control" %>
+              </div>
+
+              <div class="form-group">
+                <%= message_form.text_field :asunto, placeholder: "Asunto", class: "form-control" %>
+              </div>
+
+              <div class="form-group">
+                <%= message_form.text_area :mensaje, placeholder: "Mensaje", class: "form-control" %>
+              </div>
+            </fieldset>
+
+            <fieldset class="text-right">
+              <div class="form-group">
+                <%= message_form.submit "Enviar Mensaje", class: "btn btn-lg btn-red float-right" %>
+              </div>
+            </fieldset>
+        <% end %>
+      </div>
+      <div class="row">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= content_for :js_footer do %>
+ <%= javascript_include_tag 'contact' %>
+<% end %>

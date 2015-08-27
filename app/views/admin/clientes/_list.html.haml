@@ -1,0 +1,30 @@
+- @entities.each do |entity|
+  %tr{id: "entity_#{entity.id}"}
+    %td
+      %b
+        - unless entity.empresa.empty?
+          #{entity.empresa}
+          %br/
+          Persona de Contacto:
+      #{entity.nombre_y_apellidos}
+    %td #{entity.tipo.humanize}
+    %td #{entity.identificacion}
+    %td
+      #{entity.correo}
+    %td
+      %b Convencional:
+      #{entity.telefono or '-'}
+      %br/
+      %b Celular:
+      #{entity.celular or '-'}
+    %td.text-center
+      .badge
+        #{entity.vehiculos.count}
+    %td.text-center
+      = link_to edit_admin_cliente_path(entity.id), remote: true, class: 'btn btn-primary btn-sm', title: 'Editar', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-pencil
+      = link_to admin_cliente_path(entity.id), method: :delete, remote: true, class: 'btn btn-default btn-sm delete', title: 'Eliminar', data: {toggle: 'tooltip', confirm: '¿Seguro que desea eliminar este cliente?'} do
+        %i.glyphicon.glyphicon-trash
+      = link_to new_admin_vehiculo_path(client: entity.id), remote: true, class: 'btn btn-red btn-sm', title: 'Ingresar Vehiculo', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-plus
+        Ingresar Vehiculo

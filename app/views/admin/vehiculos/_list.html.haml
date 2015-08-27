@@ -1,0 +1,41 @@
+- @vehiculos.each do |vehiculo|
+  %tr{id: "vehiculo_#{vehiculo.id}"}
+    %td
+      %b
+        - unless vehiculo.cliente.empresa.empty?
+          #{vehiculo.cliente.empresa}
+          %br/
+          Persona de Contacto:
+      #{vehiculo.cliente.nombre_y_apellidos}
+    %td #{vehiculo.placa}
+    %td
+      #{vehiculo.marca}
+    %td
+      #{vehiculo.modelo or '-'}
+    %td
+      #{vehiculo.fecha_ingreso or '-'}
+    %td
+      #{vehiculo.responsabilidad_civil or '-'}
+    %td
+      #{vehiculo.aseguradora or 'Ninguna'}
+    %td.text-center
+      - if vehiculo.estado_vehiculos.count > 0
+        %span.label.label-danger
+          #{vehiculo.estado_vehiculos.all.last.estado.nombre or '-'}
+    %td.text-center
+      = link_to edit_admin_vehiculo_path(vehiculo.id), remote: true, class: 'btn btn-primary btn-sm', title: 'Editar', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-pencil
+      = link_to admin_vehiculo_path(vehiculo.id), method: :delete, remote: true, class: 'btn btn-default btn-sm delete', title: 'Eliminar', data: {toggle: 'tooltip', confirm: '¿Seguro que desea eliminar este vehículo?'} do
+        %i.glyphicon.glyphicon-trash
+    %td.text-center
+      .input-group-btn
+        %button.btn.btn-default.btn-block.dropdown-toggle{aria:{expanded: "false"}, data: {toggle: "dropdown"}, type: "button"}
+          Agregar Estado
+          %span.caret
+        %ul.dropdown-menu.noclose{role: 'menu'}
+          - Estado.all.each do |estado|
+            %li.checkbox-container
+              = link_to estado.nombre, new_admin_estado_vehiculo_path(vehiculo: vehiculo.id, estado: estado.id), remote: true
+      = link_to edit_admin_cliente_path(vehiculo.id), remote: true, class: 'btn btn-default btn-block', title: 'Ingresar Vehiculo', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-align-center
+        Historial Estados
