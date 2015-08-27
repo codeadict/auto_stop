@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails auto_stop: development" uuid="b885be6a-d39d-4a97-b16e-4ec5e2e7f70c">
+      <user-name>postgres</user-name>
+      <user-password>dfdfdfc4dfc3dfd2dfd8dfc5dfc9dfc1dfd9df98df9adf9bdf98</user-password>
+      <schema-pattern>auto_stop_development.*</schema-pattern>
+      <default-schemas>auto_stop_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails auto_stop: test" uuid="053acc2c-37d3-40f9-8f7c-e0c924b3f960">
+      <user-name>postgres</user-name>
+      <user-password>dfdfdfc4dfc3dfd2dfd8dfc5dfc9dfc1dfd9df98df9adf9bdf98</user-password>
+      <schema-pattern>auto_stop_test.*</schema-pattern>
+      <default-schemas>auto_stop_test.*</default-schemas>
+    </data-source>
+    <data-source name="Rails auto_stop: production" uuid="371373da-4dc7-4096-aa67-5bd2a7fc1d5c">
+      <first-sync>true</first-sync>
+      <user-name>rails</user-name>
+      <user-password>dfc7dfebdf92df9fdf92dffcdffedfe2df98dfff</user-password>
+    </data-source>
+    <data-source name="Rails auto_stop: development" uuid="a3043a2c-ac8a-42a8-8ad9-47a48b6dd002">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>dfdfdfc4dfc3dfd2dfd8dfc5dfc9dfc1dfd9df98df9adf9bdf98</user-password>
+    </data-source>
+    <data-source name="Rails auto_stop: test" uuid="f187d136-b388-47e0-a059-5563cd9fc835">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+      <user-password>dfdfdfc4dfc3dfd2dfd8dfc5dfc9dfc1dfd9df98df9adf9bdf98</user-password>
+    </data-source>
+    <data-source name="Rails auto_stop: production" uuid="2e9ead2a-3931-48d8-8250-935ab4d08064">
+      <first-sync>true</first-sync>
+      <user-name>rails</user-name>
+      <user-password>dfc7dfebdf92df9fdf92dffcdffedfe2df98dfff</user-password>
+    </data-source>
+    <data-source name="Rails auto_stop: development" uuid="3de85944-2aa4-479e-8f42-e1cd9fdc7103">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+      <user-password>dfdfdfc4dfc3dfd2dfd8dfc5dfc9dfc1dfd9df98df9adf9bdf98</user-password>
+    </data-source>
+    <data-source name="Rails auto_stop: test" uuid="c8576ba0-9d54-481b-b7d5-0c198f76810d">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+      <user-password>dfdfdfc4dfc3dfd2dfd8dfc5dfc9dfc1dfd9df98df9adf9bdf98</user-password>
+    </data-source>
+    <data-source name="Rails auto_stop: production" uuid="0665dbfc-d4dd-4c94-93e3-e739666078cf">
+      <first-sync>true</first-sync>
+      <user-name>rails</user-name>
+      <user-password>dfc7dfebdf92df9fdf92dffcdffedfe2df98dfff</user-password>
+    </data-source>
+  </component>
+</project>

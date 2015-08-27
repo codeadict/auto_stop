@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails auto_stop: development" uuid="b885be6a-d39d-4a97-b16e-4ec5e2e7f70c">
+    <database-info product="MySQL" version="5.5.5-10.0.16-MariaDB-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="auto_stop_development"/>
+    <table name="adjuntos" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="estado_vehiculo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="archivo_file_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="archivo_content_type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="archivo_file_size" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="archivo_updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="ckeditor_assets" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="data_file_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="data_content_type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="data_file_size" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="assetable_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="assetable_type" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="width" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="height" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="idx_ckeditor_assetable" unique="false" columns="assetable_type,assetable_id"/>
+      <index name="idx_ckeditor_assetable_type" unique="false" columns="assetable_type,type,assetable_id"/>
+    </table>
+    <table name="clientes" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="tipo_identificacion" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="JzAn"/>
+      <column name="identificacion" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="empresa" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="nombre_y_apellidos" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="telefono" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="celular" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="correo" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="direccion" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_rails_68cc3d17c6" table="vehiculos" schema="" catalog="auto_stop_development" columns="cliente_id"/>
+      <index name="index_clientes_on_identificacion" unique="false" columns="identificacion"/>
+      <index name="index_clientes_on_tipo_identificacion" unique="false" columns="tipo_identificacion"/>
+    </table>
+    <table name="estado_vehiculos" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="vehiculo_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="estado_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="notas" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="fecha_y_hora" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzIwMTUtMDctMjIgMDA6MDA6MDAn"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fk_rails_9f919518b6" columns="vehiculo_id" ref-table="vehiculos" ref-schema="" ref-catalog="auto_stop_development" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_rails_ea28ebc0f4" columns="estado_id" ref-table="estados" ref-schema="" ref-catalog="auto_stop_development" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_rails_ea28ebc0f4" unique="false" columns="estado_id"/>
+      <index name="index_estado_vehiculos_on_vehiculo_id" unique="false" columns="vehiculo_id"/>
+    </table>
+    <table name="estados" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nombre" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_rails_ea28ebc0f4" table="estado_vehiculos" schema="" catalog="auto_stop_development" columns="estado_id"/>
+      <index name="index_estados_on_nombre" unique="false" columns="nombre"/>
+    </table>
+    <table name="pages" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="layout" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="content" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="schema_migrations" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="version" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <index name="unique_schema_migrations" unique="true" columns="version"/>
+    </table>
+    <table name="users" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="encrypted_password" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="reset_password_token" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="reset_password_sent_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="remember_created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="sign_in_count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="current_sign_in_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="last_sign_in_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="current_sign_in_ip" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="last_sign_in_ip" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="confirmation_token" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="confirmed_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="confirmation_sent_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="unconfirmed_email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="invitation_token" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="invitation_created_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="invitation_sent_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="invitation_accepted_at" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="invitation_limit" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="invited_by_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="invited_by_type" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="invitations_count" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="index_users_on_email" unique="true" columns="email"/>
+      <index name="index_users_on_invitation_token" unique="true" columns="invitation_token"/>
+      <index name="index_users_on_reset_password_token" unique="true" columns="reset_password_token"/>
+      <index name="index_users_on_invitations_count" unique="false" columns="invitations_count"/>
+      <index name="index_users_on_invited_by_id" unique="false" columns="invited_by_id"/>
+    </table>
+    <table name="vehiculos" schema="" catalog="auto_stop_development" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="cliente_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="placa" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="marca" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="modelo" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="anio" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="color" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="responsabilidad_civil" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="aseguradora" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="poliza" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="kilometraje_actual" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="descripcion_del_trabajo" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="fecha_ingreso" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="created_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fk_rails_68cc3d17c6" columns="cliente_id" ref-table="clientes" ref-schema="" ref-catalog="auto_stop_development" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_rails_9f919518b6" table="estado_vehiculos" schema="" catalog="auto_stop_development" columns="vehiculo_id"/>
+      <index name="index_vehiculos_on_cliente_id" unique="false" columns="cliente_id"/>
+      <index name="index_vehiculos_on_marca" unique="false" columns="marca"/>
+      <index name="index_vehiculos_on_modelo" unique="false" columns="modelo"/>
+      <index name="index_vehiculos_on_placa" unique="false" columns="placa"/>
+    </table>
+  </data-source>
+  <data-source name="Rails auto_stop: test" uuid="053acc2c-37d3-40f9-8f7c-e0c924b3f960">
+    <database-info product="MySQL" version="5.5.41-0ubuntu0.12.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="auto_stop_test"/>
+  </data-source>
+  <data-source name="Rails auto_stop: production" uuid="371373da-4dc7-4096-aa67-5bd2a7fc1d5c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails auto_stop: development" uuid="a3043a2c-ac8a-42a8-8ad9-47a48b6dd002">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails auto_stop: test" uuid="f187d136-b388-47e0-a059-5563cd9fc835">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails auto_stop: production" uuid="2e9ead2a-3931-48d8-8250-935ab4d08064">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails auto_stop: development" uuid="3de85944-2aa4-479e-8f42-e1cd9fdc7103">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails auto_stop: test" uuid="c8576ba0-9d54-481b-b7d5-0c198f76810d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails auto_stop: production" uuid="0665dbfc-d4dd-4c94-93e3-e739666078cf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
