@@ -17,5 +17,6 @@ Rails.application.routes.draw do
     resources :estados
     resources :pages
     resources :estado_vehiculos
+    resources :ejecutivos
   end
 end

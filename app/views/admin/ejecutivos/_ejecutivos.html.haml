@@ -1,0 +1,11 @@
+- ejecutivos.each do  |ejecutivo|
+  %li.object_list{id: "ejecutivo_#{ejecutivo.id}"}
+    .ellipsis_100{title: ejecutivo.nombre}
+      %b
+        #{ejecutivo.nombre}
+      (#{ejecutivo.correo})
+    .actions
+      = link_to  admin_ejecutivo_path(ejecutivo.id),  method: :delete, remote: true, class: 'delete', title: 'Eliminar', data: {toggle: 'tooltip', confirm: 'Seguro que desea eliminar este ejecutivo?'} do
+        %i.glyphicon.glyphicon-trash
+      = link_to edit_admin_ejecutivo_path(ejecutivo.id), class: 'edit', remote: true, id: "edit-#{ejecutivo.id}", title: 'Editar', data: {toggle: 'tooltip'} do
+        %i.glyphicon.glyphicon-pencil

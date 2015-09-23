@@ -2,104 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe549ae7-c15e-4488-8406-675bb7050dc3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/_edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/_edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/_estados.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_list.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/_new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/_new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/visitors/_page.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/pages/_pages.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_show.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/visitors/_vehicle_status.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/adjunto.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/admin_layout.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/cliente.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/visitors/consultar.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/visitors/consultar.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/contact.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/concerns/contacts_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/contacts/create.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/create.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/create.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/create.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/create.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/dashboard_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/destroy.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/destroy.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/destroy.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/edit.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/edit.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/edit.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/edit.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/estado.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/estado_vehiculo.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/estado_vehiculos_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/estados_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/pages/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/index.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/index.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/index.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/mensaje.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/mailers/mensaje_mailer.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/mensajes_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mensajes/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/contacts/new.html.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/clientes/new.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/new.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/estados/new.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/new.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/message_mailer/new_message.text.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/visitors/nosotros.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/page.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/pages_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/visitors/servicios.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/show.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/update.js.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/vehiculo.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/vehiculos_controller.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/visitors/index.html.erb" afterPath="$PROJECT_DIR$/app/views/visitors/index.html.slim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/_edit.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/_ejecutivos.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/_form.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/_new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/create.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/destroy.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/edit.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ejecutivo.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/ejecutivos_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/index.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/mailers/previews/mensaje_mailer_preview.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/admin/ejecutivos/new.js.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mensaje_mailer/status_changed.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/time_formats.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/validators_helper.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/1/call_us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/10/mockup-patos-18-schedule-monthly-daily-stats_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/11/mockup-patos-18-schedule-monthly-daily-stats_002.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/12/webcam-toy-photo6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/13/webcam-toy-photo7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/2/close_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/3/close_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/4/linux_meme.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/5/Lordvoldemort.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/6/mobile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/7/mobile_drawe.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/8/11880327_1078930048792121_334705568887330804_n.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/adjuntos/9/mockup-patos-18-schedule-monthly-daily-stats.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navigation.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navigation_links.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation_links.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/create_admin_service.rb" afterPath="$PROJECT_DIR$/app/services/create_admin_service.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/vehiculos/_list.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/_list.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/auto_stop.iml" afterPath="$PROJECT_DIR$/.idea/auto_stop.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/cliente.rb" afterPath="$PROJECT_DIR$/app/models/cliente.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/create.js.coffee" afterPath="$PROJECT_DIR$/app/views/admin/estado_vehiculos/create.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/estados/create.js.coffee" afterPath="$PROJECT_DIR$/app/views/admin/estados/create.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/estado_vehiculos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/estado_vehiculos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/vehiculos/index.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/vehiculos/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/mensaje_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/mensaje_mailer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rails" afterPath="$PROJECT_DIR$/bin/rails" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rake" afterPath="$PROJECT_DIR$/bin/rake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rspec" afterPath="$PROJECT_DIR$/bin/rspec" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/visitors_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/visitors_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/setup" afterPath="$PROJECT_DIR$/bin/setup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/spring" afterPath="$PROJECT_DIR$/bin/spring" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/vehiculo.rb" afterPath="$PROJECT_DIR$/app/models/vehiculo.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/vehiculos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/vehiculos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="auto_stop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +74,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/auto_stop@Development__auto_stop.coverage" NAME="Development: auto_stop Coverage Results" MODIFIED="1440626755845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="auto_stop" />
-    <SUITE FILE_PATH="coverage/auto_stop@db_migrate__auto_stop.coverage" NAME="db:migrate: auto_stop Coverage Results" MODIFIED="1436795785101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="auto_stop" />
+    <SUITE FILE_PATH="coverage/auto_stop@Development__auto_stop.coverage" NAME="Development: auto_stop Coverage Results" MODIFIED="1442590511249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="auto_stop" />
+    <SUITE FILE_PATH="coverage/auto_stop@db_migrate__auto_stop.coverage" NAME="db:migrate: auto_stop Coverage Results" MODIFIED="1442590068045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="auto_stop" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -172,56 +130,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/mensajes/new.html.erb">
+      <file leaf-file-name="_form.html.haml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="21" />
+            <state vertical-scroll-proportion="-9.24138">
+              <caret line="29" column="121" selection-start-line="29" selection-start-column="121" selection-end-line="29" selection-end-column="121" />
               <folding>
-                <marker date="1440617099449" expanded="true" signature="208:249" placeholder=".row" />
-                <marker date="1440617099449" expanded="true" signature="217:249" placeholder=".col-md-12" />
-                <marker date="1440617099449" expanded="true" signature="234:249" placeholder="#statuses-chart" />
+                <marker date="1442895850559" expanded="true" signature="170:3305" placeholder=".modal-body" />
+                <marker date="1442895850559" expanded="true" signature="186:351" placeholder=".alert.alert-block.alert-danger.alert-dismissable.error_box{style: &quot;display:none;&quot;}" />
+                <marker date="1442895850559" expanded="true" signature="381:642" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="394:642" placeholder=".col-md-12" />
+                <marker date="1442895850559" expanded="true" signature="415:628" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="729:3072" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="740:2016" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="798:1358" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="813:960" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="835:960" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="971:1358" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="993:1358" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="1082:1358" placeholder=".input-group.date#datetimepicker1" />
+                <marker date="1442895850559" expanded="true" signature="1367:1689" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="1382:1529" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="1404:1529" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="1540:1689" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="1562:1689" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="1698:2016" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="1713:1858" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="1735:1858" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="1869:2016" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="1891:2016" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="2023:3072" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="2041:2266" placeholder=".col-md-12" />
+                <marker date="1442895850559" expanded="true" signature="2113:2266" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="2275:2581" placeholder=".col-md-12" />
+                <marker date="1442895850559" expanded="true" signature="2296:2581" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="2590:2744" placeholder=".col-md-12" />
+                <marker date="1442895850559" expanded="true" signature="2611:2744" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="2753:2896" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="2773:2896" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="2905:3072" placeholder=".col-md-6" />
+                <marker date="1442895850559" expanded="true" signature="2925:3072" placeholder=".form-group" />
+                <marker date="1442895850559" expanded="true" signature="3077:3305" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="3088:3305" placeholder=".col-md-12" />
+                <marker date="1442895850559" expanded="true" signature="3107:3305" placeholder=".row" />
+                <marker date="1442895850559" expanded="true" signature="3122:3305" placeholder=".col-md-12" />
+                <marker date="1442895850559" expanded="true" signature="3145:3305" placeholder=".form-group" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20150826222100_add_insurance_emails_on_vehicles.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20150826222100_add_insurance_emails_on_vehicles.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20150628170308_add_cases_table.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20150628170308_add_cases_table.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -230,7 +184,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/vehiculo.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="133" selection-start-line="3" selection-start-column="117" selection-end-line="3" selection-end-column="133" />
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -239,76 +193,78 @@
       <file leaf-file-name="vehiculos_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/vehiculos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78221416">
-              <caret line="53" column="217" selection-start-line="53" selection-start-column="217" selection-end-line="53" selection-end-column="217" />
+            <state vertical-scroll-proportion="0.29220778">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.75">
-              <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
-              <folding>
-                <marker date="1440628432817" expanded="true" signature="170:3161" placeholder=".modal-body" />
-                <marker date="1440628432817" expanded="true" signature="186:351" placeholder=".alert.alert-block.alert-danger.alert-dismissable.error_box{style: &quot;display:none;&quot;}" />
-                <marker date="1440628432817" expanded="true" signature="381:642" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="394:642" placeholder=".col-md-12" />
-                <marker date="1440628432817" expanded="true" signature="415:628" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="729:2928" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="740:1963" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="798:1305" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="813:960" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="835:960" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="971:1305" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="993:1305" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="1082:1305" placeholder=".input-group.date#datetimepicker1" />
-                <marker date="1440628432817" expanded="true" signature="1314:1636" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="1329:1476" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="1351:1476" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="1487:1636" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="1509:1636" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="1645:1963" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="1660:1805" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="1682:1805" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="1816:1963" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="1838:1963" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="1970:2928" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="1988:2213" placeholder=".col-md-12" />
-                <marker date="1440628432817" expanded="true" signature="2060:2213" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="2446:2600" placeholder=".col-md-12" />
-                <marker date="1440628432817" expanded="true" signature="2467:2600" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="2609:2752" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="2629:2752" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="2761:2928" placeholder=".col-md-6" />
-                <marker date="1440628432817" expanded="true" signature="2781:2928" placeholder=".form-group" />
-                <marker date="1440628432817" expanded="true" signature="2933:3161" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="2944:3161" placeholder=".col-md-12" />
-                <marker date="1440628432817" expanded="true" signature="2963:3161" placeholder=".row" />
-                <marker date="1440628432817" expanded="true" signature="2978:3161" placeholder=".col-md-12" />
-                <marker date="1440628432817" expanded="true" signature="3001:3161" placeholder=".form-group" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20150714183211_add_title_to_pages.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20150714183211_add_title_to_pages.rb">
+      <file leaf-file-name="create.js.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/create.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="5" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="ejecutivo.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/ejecutivo.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/create.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/estados/create.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7586207">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/create.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.coffee" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/estado_vehiculos/create.js.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cliente.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/cliente.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -325,31 +281,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/estado.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/ckeditor/config.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navigation_links.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/estado_vehiculo.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_list.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/visitors/index.html.slim" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/mensajes_controller.rb" />
-        <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
-        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/index.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/visitors/consultar.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/visitors/consultar.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/admin_layout.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml" />
-        <option value="$PROJECT_DIR$/app/services/create_admin_service.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/index.html.haml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/contact.js" />
-        <option value="$PROJECT_DIR$/app/mailers/mensaje_mailer.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_show.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/admin/estados/_edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/admin/estados/_new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/admin/clientes/_edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/admin/clientes/_new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_new.html.haml" />
@@ -362,10 +293,7 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/controllers/visitors_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20150824041523_add_client_type.rb" />
-        <option value="$PROJECT_DIR$/app/models/cliente.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/clientes/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/admin/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/visitors/_vehicle_status.html.haml" />
@@ -373,8 +301,36 @@
         <option value="$PROJECT_DIR$/app/views/admin/dashboard/index.html.haml" />
         <option value="$PROJECT_DIR$/db/migrate/20150826222100_add_insurance_emails_on_vehicles.rb" />
         <option value="$PROJECT_DIR$/app/views/admin/clientes/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/index.html.haml" />
+        <option value="$PROJECT_DIR$/test/mailers/previews/mensaje_mailer_preview.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/estado_vehiculos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/mensaje_mailer/status_changed.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_list.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/ejecutivos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/_edit.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/_new.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/destroy.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/index.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml" />
         <option value="$PROJECT_DIR$/app/models/vehiculo.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20150902150144_add_crud_for_executive_emails.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/_ejecutivos.html.haml" />
+        <option value="$PROJECT_DIR$/config/initializers/time_formats.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/mensaje_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml" />
+        <option value="$PROJECT_DIR$/db/migrate/20150919035025_add_executive_relation_to_vehicle.rb" />
+        <option value="$PROJECT_DIR$/app/models/cliente.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/validators_helper.rb" />
+        <option value="$PROJECT_DIR$/app/models/ejecutivo.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/estado_vehiculos/create.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/admin/ejecutivos/create.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/admin/estados/create.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/admin/vehiculos_controller.rb" />
       </list>
     </option>
@@ -396,8 +352,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="24" />
-    <option name="width" value="1370" />
-    <option name="height" value="680" />
+    <option name="width" value="1368" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -423,8 +379,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -440,6 +394,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="auto_stop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_stop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_stop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="previews" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,24 +462,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locales" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,28 +541,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="message_mailer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -627,7 +563,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mensajes" />
+              <option name="myItemId" value="mensaje_mailer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,76 +586,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sessions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -845,7 +711,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
+              <option name="myItemId" value="ejecutivos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -888,10 +754,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -908,28 +770,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ckeditor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1009,70 +849,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_stop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1089,11 +869,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/helpers" />
+      <recent name="$PROJECT_DIR$/app/views/admin" />
       <recent name="$PROJECT_DIR$/app/views/admin/vehiculos" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="$PROJECT_DIR$/app/views/admin/estadovehiculos" />
-      <recent name="$PROJECT_DIR$/app/views/admin/pages" />
-      <recent name="$PROJECT_DIR$/app/views/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/controllers" />
@@ -1296,29 +1076,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1370" height="680" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="24" width="1368" height="745" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25755286" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30336258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6695502" sideWeight="0.49093655" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29648608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5120846" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54573643" sideWeight="0.51756954" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.4879154" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32713178" sideWeight="0.4879154" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54573643" sideWeight="0.48243046" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1359,340 +1139,193 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin/estados/_edit.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/estados/_new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/_edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/_new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/estado_vehiculos/_edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/mensaje_mailer/new_message.text.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/estado_vehiculos/_new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contacts/new.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/message_mailer/new_message.text.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation_links.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="16" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/framework_and_overrides.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="225" column="17" selection-start-line="225" selection-start-column="17" selection-end-line="225" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/ckeditor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visitors/_page.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/visitors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150709144412_case_statuses_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13611615">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="19" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20150628170247_add_statuses_table.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150628165003_add_customers_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.054446463">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150707224753_rename_customer_to_cliente.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/estados/_estados.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150824041523_add_client_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/estado.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cliente.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/create.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/highcharts.js">
+    <entry file="file://$PROJECT_DIR$/app/models/page.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78221416">
-          <caret line="72" column="153" selection-start-line="72" selection-start-column="153" selection-end-line="72" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.113851994">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4537205">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.256167">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/mensaje.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="43" selection-start-line="3" selection-start-column="6" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/destroy.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/destroy.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/estado_vehiculo.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="66" />
-          <folding />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/dashboard_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/clientes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visitors/consultar.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="55" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visitors/consultar.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_list.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="45" />
-          <folding />
+          <caret line="25" column="238" selection-start-line="25" selection-start-column="238" selection-end-line="25" selection-end-column="238" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/visitors/_vehicle_status.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mensajes/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/estados_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="79" selection-start-line="31" selection-start-column="79" selection-end-line="31" selection-end-column="79" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/ejecutivos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/_edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4482758">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.655172">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/_new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4482758">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/destroy.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/edit.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/new.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <marker date="1440617099449" expanded="true" signature="208:249" placeholder=".row" />
-            <marker date="1440617099449" expanded="true" signature="217:249" placeholder=".col-md-12" />
-            <marker date="1440617099449" expanded="true" signature="234:249" placeholder="#statuses-chart" />
-          </folding>
+        <state vertical-scroll-proportion="1.6206896">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation_admin.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.310345">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150714183211_add_title_to_pages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150628170308_add_cases_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1700,89 +1333,207 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20150826222100_add_insurance_emails_on_vehicles.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/models/adjunto.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66034156">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="27" />
-          <folding>
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".modal-body" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".alert.alert-block.alert-danger.alert-dismissable.error_box{style: &quot;display:none;&quot;}" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".row" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-12" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-6" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-12" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-4" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".col-md-4" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".form-group" />
-            <marker date="1440628091175" expanded="true" signature="-1:-1" placeholder=".modal-footer" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/_list.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150628165003_add_customers_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150902150144_add_crud_for_executive_emails.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/_ejecutivos.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4482758">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/mime_types.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/time_formats.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/estado_vehiculos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/mensaje_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/estado_vehiculos/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0689654">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150919035025_add_executive_relation_to_vehicle.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/validators_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cliente.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ejecutivo.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/create.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/ejecutivos/create.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/estado_vehiculos/create.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clientes/create.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/estados/create.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7586207">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/vehiculos/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75">
-          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+        <state vertical-scroll-proportion="-9.24138">
+          <caret line="29" column="121" selection-start-line="29" selection-start-column="121" selection-end-line="29" selection-end-column="121" />
           <folding>
-            <marker date="1440628432817" expanded="true" signature="170:3161" placeholder=".modal-body" />
-            <marker date="1440628432817" expanded="true" signature="186:351" placeholder=".alert.alert-block.alert-danger.alert-dismissable.error_box{style: &quot;display:none;&quot;}" />
-            <marker date="1440628432817" expanded="true" signature="381:642" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="394:642" placeholder=".col-md-12" />
-            <marker date="1440628432817" expanded="true" signature="415:628" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="729:2928" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="740:1963" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="798:1305" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="813:960" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="835:960" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="971:1305" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="993:1305" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="1082:1305" placeholder=".input-group.date#datetimepicker1" />
-            <marker date="1440628432817" expanded="true" signature="1314:1636" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="1329:1476" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="1351:1476" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="1487:1636" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="1509:1636" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="1645:1963" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="1660:1805" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="1682:1805" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="1816:1963" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="1838:1963" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="1970:2928" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="1988:2213" placeholder=".col-md-12" />
-            <marker date="1440628432817" expanded="true" signature="2060:2213" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="2446:2600" placeholder=".col-md-12" />
-            <marker date="1440628432817" expanded="true" signature="2467:2600" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="2609:2752" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="2629:2752" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="2761:2928" placeholder=".col-md-6" />
-            <marker date="1440628432817" expanded="true" signature="2781:2928" placeholder=".form-group" />
-            <marker date="1440628432817" expanded="true" signature="2933:3161" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="2944:3161" placeholder=".col-md-12" />
-            <marker date="1440628432817" expanded="true" signature="2963:3161" placeholder=".row" />
-            <marker date="1440628432817" expanded="true" signature="2978:3161" placeholder=".col-md-12" />
-            <marker date="1440628432817" expanded="true" signature="3001:3161" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="170:3305" placeholder=".modal-body" />
+            <marker date="1442895850559" expanded="true" signature="186:351" placeholder=".alert.alert-block.alert-danger.alert-dismissable.error_box{style: &quot;display:none;&quot;}" />
+            <marker date="1442895850559" expanded="true" signature="381:642" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="394:642" placeholder=".col-md-12" />
+            <marker date="1442895850559" expanded="true" signature="415:628" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="729:3072" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="740:2016" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="798:1358" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="813:960" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="835:960" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="971:1358" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="993:1358" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="1082:1358" placeholder=".input-group.date#datetimepicker1" />
+            <marker date="1442895850559" expanded="true" signature="1367:1689" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="1382:1529" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="1404:1529" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="1540:1689" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="1562:1689" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="1698:2016" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="1713:1858" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="1735:1858" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="1869:2016" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="1891:2016" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="2023:3072" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="2041:2266" placeholder=".col-md-12" />
+            <marker date="1442895850559" expanded="true" signature="2113:2266" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="2275:2581" placeholder=".col-md-12" />
+            <marker date="1442895850559" expanded="true" signature="2296:2581" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="2590:2744" placeholder=".col-md-12" />
+            <marker date="1442895850559" expanded="true" signature="2611:2744" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="2753:2896" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="2773:2896" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="2905:3072" placeholder=".col-md-6" />
+            <marker date="1442895850559" expanded="true" signature="2925:3072" placeholder=".form-group" />
+            <marker date="1442895850559" expanded="true" signature="3077:3305" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="3088:3305" placeholder=".col-md-12" />
+            <marker date="1442895850559" expanded="true" signature="3107:3305" placeholder=".row" />
+            <marker date="1442895850559" expanded="true" signature="3122:3305" placeholder=".col-md-12" />
+            <marker date="1442895850559" expanded="true" signature="3145:3305" placeholder=".form-group" />
           </folding>
         </state>
       </provider>
@@ -1790,15 +1541,15 @@
     <entry file="file://$PROJECT_DIR$/app/models/vehiculo.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="133" selection-start-line="3" selection-start-column="117" selection-end-line="3" selection-end-column="133" />
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/vehiculos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78221416">
-          <caret line="53" column="217" selection-start-line="53" selection-start-column="217" selection-end-line="53" selection-end-column="217" />
+        <state vertical-scroll-proportion="0.29220778">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding />
         </state>
       </provider>

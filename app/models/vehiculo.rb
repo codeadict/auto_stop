@@ -1,7 +1,8 @@
 class Vehiculo < ActiveRecord::Base
   belongs_to :cliente
-  has_many :estado_vehiculos
-  validates_presence_of :placa, :cliente, :marca, :modelo, :anio, :descripcion_del_trabajo, :color, :fecha_ingreso, :correo_ejecutivo
+  belongs_to :ejecutivo
+  has_many :estado_vehiculos, :dependent => :destroy
+  validates_presence_of :placa, :cliente, :marca, :modelo, :anio, :descripcion_del_trabajo, :color, :fecha_ingreso
 
   enum mail: {
            Guido_Merino: 'merinogu@asegsur.com.ec',

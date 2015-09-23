@@ -27,7 +27,7 @@
             .form-group
               = f.label :fecha_ingreso, class: 'control-label'
               .input-group.date#datetimepicker1
-                = f.text_field :fecha_ingreso, class: 'form-control', data: {format: "dd/MM/yyyy" }
+                = f.text_field :fecha_ingreso, class: 'form-control', value: @vehiculo.fecha_ingreso.strftime("%d/%m/%Y"), data: {format: "dd/MM/yyyy" }
                 %span.input-group-addon
                   %i.glyphicon.glyphicon-calendar
         .row
@@ -57,8 +57,8 @@
             = f.text_field :responsabilidad_civil, class: 'form-control'
         .col-md-12
           .form-group
-            = f.label :correo_ejecutivo, class: 'control-label'
-            = f.select :correo_ejecutivo, options_for_select(Vehiculo.mails, selected: ''),{}, {class: 'form-control'}
+            = f.label :ejecutivo_id, class: 'control-label'
+            = f.select :ejecutivo_id, options_for_select(Ejecutivo.order("nombre").map { |e| [e.nombre + "( #{e.correo} )", e.id] }, selected: @vehiculo.ejecutivo_id),{include_blank: true}, {class: 'form-control'}
         .col-md-12
           .form-group
             = f.label :aseguradora, class: 'control-label'
@@ -81,7 +81,7 @@
   .modal-footer
     = link_to "Cancelar", '#', class: 'btn', data: {dismiss: 'modal'}
     = button_tag class: 'btn btn-red' do
-      %i.glyphicon.glyphicon.glyphicon-floppy-disk
+      %i.glyphicon.glyphicon-floppy-disk
       Guardar
 
 :javascript

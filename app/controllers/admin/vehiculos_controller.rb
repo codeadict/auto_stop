@@ -25,6 +25,7 @@ class Admin::VehiculosController < AdminController
       @cliente = Cliente.find(params[:client])
     end
     @vehiculo = Vehiculo.new()
+    @vehiculo.fecha_ingreso = Date.current
   end
 
   def create
@@ -51,6 +52,6 @@ class Admin::VehiculosController < AdminController
   private
 
   def vehicle_params
-    params.require(:vehiculo).permit(:cliente_id, :placa, :marca, :modelo, :anio, :color, :responsabilidad_civil, :aseguradora, :poliza, :kilometraje_actual, :descripcion_del_trabajo, :fecha_ingreso, :correo_ejecutivo)
+    params.require(:vehiculo).permit(:cliente_id, :placa, :marca, :modelo, :anio, :color, :responsabilidad_civil, :aseguradora, :poliza, :kilometraje_actual, :descripcion_del_trabajo, :fecha_ingreso, :ejecutivo_id)
   end
 end

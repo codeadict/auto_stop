@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150826222100) do
+ActiveRecord::Schema.define(version: 20150919035025) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,15 @@ ActiveRecord::Schema.define(version: 20150826222100) do
 
   add_index "clientes", ["identificacion"], name: "index_clientes_on_identificacion", using: :btree
   add_index "clientes", ["tipo_identificacion"], name: "index_clientes_on_tipo_identificacion", using: :btree
+
+  create_table "ejecutivos", force: :cascade do |t|
+    t.string   "nombre",     null: false
+    t.string   "correo",     null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "ejecutivos", ["correo"], name: "index_ejecutivos_on_correo", using: :btree
 
   create_table "estado_vehiculos", force: :cascade do |t|
     t.integer  "vehiculo_id"
@@ -135,10 +144,11 @@ ActiveRecord::Schema.define(version: 20150826222100) do
     t.date     "fecha_ingreso"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
-    t.string   "correo_ejecutivo"
+    t.integer  "ejecutivo_id"
   end
 
   add_index "vehiculos", ["cliente_id"], name: "index_vehiculos_on_cliente_id", using: :btree
+  add_index "vehiculos", ["ejecutivo_id"], name: "index_vehiculos_on_ejecutivo_id", using: :btree
   add_index "vehiculos", ["marca"], name: "index_vehiculos_on_marca", using: :btree
   add_index "vehiculos", ["modelo"], name: "index_vehiculos_on_modelo", using: :btree
   add_index "vehiculos", ["placa"], name: "index_vehiculos_on_placa", using: :btree

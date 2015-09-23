@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+</head>
+<body>
+<p>Estimado/a <%= @status.vehiculo.cliente.nombre_y_apellidos %>:</p>
+</br>
+<p>El estado del vehículo <%= @status.vehiculo.marca %>  <%= @status.vehiculo.modelo %> con placa:
+  <b><%= @status.vehiculo.placa %></b> ha cambiado a
+<blockquote>"<%= @status.estado.nombre %>"</blockquote>
+</p>
+<br/>
+
+<p><b>Observaciones:</b></p>
+
+<p>
+  <i>
+    <%= @status.notas %>
+  </i>
+</p>
+<br/>
+
+<p>Saludos cordiales,</p>
+<br/>
+AutoStop LC
+<br/>
+<b>Teléfonos:</b> 02243-2655
+<br/>
+<b>Celular:</b> 09 58871429
+</body>
+</html>
+
+
+

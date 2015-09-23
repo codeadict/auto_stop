@@ -38,12 +38,13 @@ class Admin::EstadoVehiculosController < AdminController
     respond_to do |format|
       if @estado.save
 
-        if params[:adjuntos]
+        unless params[:adjuntos].nil?
           params[:adjuntos].each { |adjunto|
             @estado.adjuntos.create(archivo: adjunto)
           }
-        format.html { redirect_to admin_vehiculos_path, notice: 'Estado cambiado correctamente' }
         end
+        MensajeMailer.status_changed(@estado).deliver
+        format.html { redirect_to admin_vehiculos_path, notice: 'Estado cambiado correctamente' }
       end
     end
   end

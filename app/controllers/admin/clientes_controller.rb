@@ -45,8 +45,6 @@ class Admin::ClientesController < AdminController
 
   def destroy
     @entity = Cliente.find(params[:id])
-    lien_use_count = @entity.property_entities.count
-    render js: "alert('Entity is used on #{pluralize(lien_use_count, 'parcel')}. Cannot be deleted.')" unless lien_use_count == 0
     render js: 'alert("Could not delete entity");' unless @entity.destroy
   end
 

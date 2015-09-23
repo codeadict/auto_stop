@@ -30,12 +30,12 @@
     %td.text-center
       .input-group-btn
         %button.btn.btn-default.btn-block.dropdown-toggle{aria:{expanded: "false"}, data: {toggle: "dropdown"}, type: "button"}
-          Agregar Estado
+          Cambiar Estado
           %span.caret
         %ul.dropdown-menu.noclose{role: 'menu'}
           - Estado.all.each do |estado|
             %li.checkbox-container
               = link_to estado.nombre, new_admin_estado_vehiculo_path(vehiculo: vehiculo.id, estado: estado.id), remote: true
-      = link_to edit_admin_cliente_path(vehiculo.id), remote: true, class: 'btn btn-default btn-block', title: 'Ingresar Vehiculo', data: {toggle: 'tooltip'} do
-        %i.glyphicon.glyphicon-align-center
-        Historial Estados
+      -#= link_to edit_admin_cliente_path(vehiculo.id), remote: true, class: 'btn btn-default btn-block', title: 'Ingresar Vehiculo', data: {toggle: 'tooltip'} do
+      -#  %i.glyphicon.glyphicon-align-center
+      -#  Historial Estados

@@ -172,7 +172,7 @@
     <orderEntry type="library" scope="PROVIDED" name="capistrano-bundler (v1.1.2, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano-rails (v1.1.0, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capistrano-rails-console (v0.5.2, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="capistrano-rvm (v0.1.2, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capistrano-rvm (v0.1.2@9cfef3, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.4.4, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.5.6, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ckeditor (v4.1.2, RVM: ruby-2.2.0 [auto_stop]) [gem]" level="application" />

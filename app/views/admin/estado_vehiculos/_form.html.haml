@@ -11,14 +11,14 @@
         .form-group
           = f.label :fecha_y_hora, class: 'control-label'
           .input-group.date#datetimepicker1
-            = f.text_field :fecha_y_hora, class: 'form-control'
+            = f.text_field :fecha_y_hora, value: Time.now.strftime("%d/%m/%Y %H:%M"), class: 'form-control'
             %span.input-group-addon
               %i.glyphicon.glyphicon-calendar
     .row
       .col-md-12
         .form-group
           = f.label :notas, class: 'control-label'
-          = f.text_area :notas, class: 'form-control'
+          = f.text_area :notas, class: 'form-control', autofocus: true
     .row
       .col-md-12
         .form-group

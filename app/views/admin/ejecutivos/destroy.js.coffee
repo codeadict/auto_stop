@@ -1,0 +1,1 @@
+$("#ejecutivo_<%= @ejecutivo.id %>").fadeOut('fast').remove()

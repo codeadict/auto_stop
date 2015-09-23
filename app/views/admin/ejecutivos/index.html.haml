@@ -1,0 +1,12 @@
+.row
+  .col-md-6
+    %h2 Ejecutivos
+  .pull-right
+    = link_to new_admin_ejecutivo_path, remote: true, class: 'btn btn-red' do
+      %i.glyphicon.glyphicon-plus-sign
+      Agregar Ejecutivo
+
+.row
+  %section.section
+    %ul.list-unstyled#ejecutivos_list
+      = render 'ejecutivos', ejecutivos: @ejecutivos

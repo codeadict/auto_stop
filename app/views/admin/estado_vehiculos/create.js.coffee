@@ -1,7 +1,8 @@
 $('#crud_modal ul.errors').html ''
 <% if @estado.errors.any? %>
 <% @estado.errors.full_messages.each do |message| %>
-$('#crud_modal ul.errors').append $('<li />').html('<%= message.html_safe %>')
+$("#crud_modal ul.errors").append $('<li/>').html "<%= message.html_safe %>"
+$('.error_box').show()
 <% end %>
 <% else %>
 $("#crud_modal").modal("hide")
